@@ -47,6 +47,7 @@ public class Employee {
     private String cubeId;
     private Date orientationDate;
     private OutputService output;
+    
 
     public Employee(String firstName, String lastName, String ssn) {
         // Using setter method guarantees validation will be performed
@@ -91,6 +92,7 @@ public class Employee {
     // and should only be called as part of the larger task of:
     private void meetWithHrForBenefitAndSalryInfo() {
         metWithHr = true;
+        
         output.simpleOutput(firstName + " " + lastName + " met with Hr on "
             + getFormattedDate());
     }
